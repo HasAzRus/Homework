@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3031a4e647f4d20a915a8689e4472af, type: 3}
+  m_Name: Game Config
+  m_EditorClassIdentifier: 
+  _playerPrefab: {fileID: 4386974517474617684, guid: f013fe10fc4c8e644868edd75a78578a, type: 3}
+  _userInterfacePrefab: {fileID: 3080608325660644595, guid: c502624b81d67f246a361bff48b4887d, type: 3}
+  _inputHandlerPrefab: {fileID: 2349135530637741214, guid: 81ca67d2f1bad154291c873a0bdad03d, type: 3}
+  _levels:
+  - {fileID: 11400000, guid: 488cccb0dc30b924ca4b192f349be7dd, type: 2}
+  - {fileID: 11400000, guid: 8d0c76a6d78bfca48b321bb32a574d5b, type: 2}

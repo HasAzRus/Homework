@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Homework
 {
@@ -35,6 +36,16 @@ namespace Homework
         }
 
         protected virtual void OnDestroy()
+        {
+            
+        }
+
+        protected virtual void OnTriggerEnter2D(Collider2D other)
+        {
+            
+        }
+
+        protected virtual void OnTriggerExit2D(Collider2D other)
         {
             
         }
