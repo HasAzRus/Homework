@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Homework
 {
@@ -11,18 +10,18 @@ namespace Homework
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private Gradient _gradient;
 
-        [SerializeField] private Character _character;
+        [SerializeField] private Character _target;
 
         protected override void OnEnable()
         {
             base.OnEnable();
             
-            _character.ReadableHealth.ValueChanged += OnValueChanged;
+            _target.ReadableHealth.ValueChanged += OnValueChanged;
         }
 
         private void OnValueChanged(float value)
         {
-            var normalizedValue = value / _character.ReadableHealth.MaxValue;
+            var normalizedValue = value / _target.ReadableHealth.MaxValue;
             
             var scale = Vector3.one;
             scale.x = normalizedValue * _scaleAmount;
@@ -36,7 +35,7 @@ namespace Homework
         {
             base.OnDisable();
 
-            _character.ReadableHealth.ValueChanged -= OnValueChanged;
+            _target.ReadableHealth.ValueChanged -= OnValueChanged;
         }
     }
 }
